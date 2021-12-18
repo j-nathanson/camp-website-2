@@ -4,6 +4,7 @@ import Directory from './components/DirectoryComponent';
 import './App.css';
 import { CAMPSITES } from './shared/campsites';
 
+//State tends to stay the same for each 
 class App extends Component {
   constructor(props) {
     super(props);
