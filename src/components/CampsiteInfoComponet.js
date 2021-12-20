@@ -5,7 +5,7 @@ class CampsiteInfo extends Component {
 
     renderCampsite(campsite) {
         return (
-            <div className='col-md-5 m-1'>
+            <div key={campsite.id} className='col-md-5 m-1'>
                 <Card>
                     <CardImg top src={campsite.image} alt={campsite.name} />
                     <CardBody>
