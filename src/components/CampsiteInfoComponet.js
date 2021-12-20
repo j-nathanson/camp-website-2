@@ -24,7 +24,7 @@ class CampsiteInfo extends Component {
                     <h4>Comments</h4>
                     {comments.map(comment => {
                         return (
-                            <div>
+                            <div key={comment.id}>
                                 <p>{comment.text}</p>
                                 <p>{comment.author} {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(comment.date)))} </p>
                             </div>
@@ -37,6 +37,8 @@ class CampsiteInfo extends Component {
     }
 
     render() {
+        console.log('this is state ' + this.state);
+        console.log('this is props ' + this.props);
         if (this.props.campsite) {
             return (
                 <div className='row'>

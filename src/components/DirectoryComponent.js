@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay,  CardTitle } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import CampsiteInfo from './CampsiteInfoComponet';
 
 class Directory extends Component {
@@ -13,7 +13,7 @@ class Directory extends Component {
     //Change selectedCampsite to campsite object.
     onCampsiteSelect(campsite) {
         this.setState({ selectedCampsite: campsite });
-        
+
     }
 
 
@@ -37,7 +37,7 @@ class Directory extends Component {
                 <div className="row">
                     {directory}
                 </div>
-            <CampsiteInfo campsite={this.state.selectedCampsite}/>
+                <CampsiteInfo campsite={this.state.selectedCampsite} />
             </div>);
     }
 }
