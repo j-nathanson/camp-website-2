@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Directory from './DirectoryComponent';
 import { CAMPSITES } from '../shared/campsites';
-import CampsiteInfo from './CampsiteInfoComponet';
+import CampsiteInfo from './CampsiteInfoComponent';
 
 //State tends to stay the same for each 
 class Main extends Component {
