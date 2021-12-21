@@ -19,6 +19,7 @@ class Header extends Component {
         });
     }
     render() {
+        console.log(this.toggleNav);
         return (
             <React.Fragment>
                 <Jumbotron fluid>
@@ -61,7 +62,6 @@ class Header extends Component {
                                 </NavItem>
                             </Nav>
                         </Collapse>
-
                     </div>
                 </Navbar>
             </React.Fragment>
