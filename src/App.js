@@ -4,18 +4,24 @@ import React, {
 import Main from './components/MainComponent';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import { Provider } from 'react-redux';
+import { ConfigureStore } from './redux/configureStore';
 
-//State tends to stay the same for each 
+
+const store = ConfigureStore();
+
 class App extends Component {
 
   render() {
 
     return (
-      <BrowserRouter>
-        <div className="App" >
-          <Main />
-        </div>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <div className="App" >
+            <Main />
+          </div>
+        </BrowserRouter>
+      </Provider>
     );
   }
 }
