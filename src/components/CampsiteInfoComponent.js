@@ -12,7 +12,7 @@ class CommentForm extends Component {
 
         this.state = {
             isModalOpen: false,
-            rating: '',
+            rating: 1,
             author: '',
             text: '',
             touched: {
