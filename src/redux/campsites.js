@@ -1,8 +1,7 @@
 
 import * as ActionTypes from './ActionTypes';
 
- 
-export const Campsites = (
+ export const Campsites = (
     state = {
         isLoading: true,
         errMess: null,
